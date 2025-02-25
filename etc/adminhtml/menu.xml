@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+  ~ Illia Neiman
+  ~
+  ~ NOTICE OF LICENSE
+  ~
+  ~ According to LICENCE file you are not allowed to copy, use or recreate this file in any ways.
+  ~ Specially for eCommerce usage.
+  ~
+  ~ @category Ineiman
+  ~ @package packageName
+  ~ @copyright Copyright (c) 2021-current Ineiman (https://github.com/illyaneiman)
+  ~ @email kg.illya.ney@gmail.com
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ineiman_Base::ineiman_base"
+             title="Illia Neiman"
+             resource="Ineiman_Base::ineiman_base_menu"
+             module="Ineiman_Base"
+             sortOrder="15"/>
+        <add id="Ineiman_Base::basegeneral"
+             title="General"
+             resource="Ineiman_Base::basegeneral"
+             module="Ineiman_Base"
+             parent="Ineiman_Base::ineiman_base"
+             sortOrder="10"/>
+        <add id="Ineiman_Base::basesettings"
+             title="Settings"
+             resource="Ineiman_Base::basegeneral"
+             module="Ineiman_Base"
+             parent="Ineiman_Base::basegeneral"
+             action="adminhtml/system_config/edit/section/ineiman_base"
+             sortOrder="10"/>
+    </menu>
+</config>

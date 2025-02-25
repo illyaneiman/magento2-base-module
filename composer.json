@@ -1,0 +1,33 @@
+{
+  "name": "ineiman/base",
+  "description": "Ineiman Magento 2 Base Module",
+  "type": "magento2-module",
+  "version": "2.4.7.0",
+  "license": [
+    "proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Illia Nieman",
+      "homepage": "http://www.local.test"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "git@github.com:illyaneiman/magento2-base-module.git"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ineiman\\Base\\": ""
+    }
+  }
+}
+
